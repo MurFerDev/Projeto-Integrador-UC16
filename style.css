@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: maroon;
+}
+img {
+    margin-left: 1rem;
+    padding: 1rem;
+}
+nav {
+    display: inline-block;
+}
+ul {
+    display: block;
+    margin-left: 150px;
+}
+li {
+    display: inline-flex;
+    margin-left: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 2rem 2rem;
+}
