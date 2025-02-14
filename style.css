@@ -3,28 +3,61 @@
     padding: 0;
 }
 
+/* ESTILIZAÇÃO DO TOPO DA PÁGINA */
 header {
-    background-color: maroon;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(105, 179, 90);
+    color: #fff;
 }
+
 img {
     margin-left: 1rem;
     padding: 1rem;
 }
+
 nav {
     display: inline-block;
 }
+
 ul {
     display: block;
     margin-left: 150px;
 }
+
 li {
     display: inline-flex;
     margin-left: 1rem;
 }
 
-.container {
-    display: grid;
-    grid-column: 2;
-    grid-row: 2;
-    gap: 2rem 2rem;
+/* ESTILIZAÇÃO DO CORPO DA PÁGINA */
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 800px;
+    height: 600px;
+    border: solid 5px #536fca;
+    border-radius: 1%;
+    margin: auto;
+    padding: auto;
+}
+
+.box {
+    background-color: #f9f969;
+    box-sizing: border-box;
+    border: solid 1px  #000;
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
+footer {
+    background-color: #6ec7f0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
 }
