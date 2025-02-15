@@ -5,15 +5,40 @@
 
 /* ESTILIZAÇÃO DO TOPO DA PÁGINA */
 header {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     background-color: rgb(105, 179, 90);
-    color: #fff;
+    
 }
 
 img {
     margin-left: 1rem;
     padding: 1rem;
 }
+.mundinho2:hover{
+    scale: 1.2;
+}
+
+.navegacao{
+    font-family: Impact, Haettenschweiler, 'Fantasy', sans-serif;
+    color: #0b5005;
+    font-size:x-large;
+}
+
+#home:hover{
+    scale: 1.2;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+#jogos:hover{
+    scale: 1.4;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+#sobre:hover{
+    scale: 1.2;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+
 
 nav {
     display: inline-block;
@@ -31,33 +56,59 @@ li {
 
 /* ESTILIZAÇÃO DO CORPO DA PÁGINA */
 
-section {
+.game {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     box-sizing: border-box;
-    width: 800px;
-    height: 600px;
+    flex-wrap: wrap;
     border: solid 5px #536fca;
     border-radius: 1%;
-    margin: auto;
-    padding: auto;
+    margin: 2rem;
+    padding: 2rem;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border:none;
+    border-radius: 1%;
+    margin: 2rem;
+    padding: 2rem;
+    font-family:fantasy;
+    font-size: x-large;
 }
 
 .box {
-    background-color: #f9f969;
+    background-color: #69a7f931;
     box-sizing: border-box;
-    border: solid 1px  #000;
+    border: solid 1px  #69a7f931;
+    padding: 2rem;
+    margin: 2rem;
 }
-
+#green:hover{
+    scale: 1.1;
+}
+#red:hover{
+    scale: 1.1;
+}
+#yellow:hover{
+    scale:1.1;
+}
 
 /* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
 footer {
     background-color: #6ec7f0;
-    position: fixed;
-    bottom: 0;
     text-align: center;
     padding: 1rem;
     margin: 1rem;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
 }
