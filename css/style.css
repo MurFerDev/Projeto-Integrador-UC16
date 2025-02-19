@@ -55,7 +55,6 @@ li {
 }
 
 /* ESTILIZAÇÃO DO CORPO DA PÁGINA */
-
 .game {
     display: flex;
     flex-direction: row;
@@ -68,6 +67,34 @@ li {
     margin: 2rem;
     padding: 2rem;
 }
+
+/* TUTORIAL GAME*/
+.game_tutorial{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.tutorial_list{
+    margin: 10px;
+}
+
+.tutorial_list ul{    
+    margin-left: 15px;
+}
+
+.tutorial_list li{
+    display: inline-block;
+    max-width: 500px;
+    list-style-type:none;
+    list-style-position: inside;
+    align-items: left;
+    margin: 5px;
+}
+
+/* ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
+
 .apresentacao{
     display: flex;
     flex-direction: row;
@@ -82,6 +109,24 @@ li {
     font-family:fantasy;
     font-size: x-large;
 }
+.description{
+    display: flex;
+}
+.game_description{
+    flex-direction:column;
+    justify-content:center ;
+    align-items: flex-end;
+    box-sizing: border-box;
+    max-width: 500px;
+    padding: 5px;
+    margin: 5px; 
+}
+.game_description p{
+    margin-top: 5px;
+    text-align: justify;
+}
+
+/* FIM DA ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
 
 .box {
     background-color: #69a7f931;
