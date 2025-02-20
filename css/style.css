@@ -12,33 +12,18 @@ header {
     
 }
 
-img {
-    margin-left: 1rem;
-    padding: 1rem;
+.top_bar {
+    height: 8vh;
 }
+
+
+.mundinho2 {
+    height: 8vh;
+}
+
 .mundinho2:hover {
     scale: 1.2;
 }
-
-.menu_bar {
-    font-family: Impact, Haettenschweiler, 'Fantasy', sans-serif;
-    color: #0b5005;
-    font-size:x-large;
-}
-
-#home:hover {
-    scale: 1.2;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-#games:hover {
-    scale: 1.4;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-#about:hover {
-    scale: 1.2;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-
 
 nav {
     display: inline-block;
@@ -54,7 +39,41 @@ li {
     margin-left: 1rem;
 }
 
-/* ESTILIZAÇÃO DO CORPO DA PÁGINA */
+#home:hover {
+    scale: 1.2;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+#games:hover {
+    scale: 1.4;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+#about:hover {
+    scale: 1.2;
+    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
+}
+
+.menu_bar {
+    font-family: Impact, Haettenschweiler, 'Fantasy', sans-serif;
+    color: #0b5005;
+    font-size:x-large;
+}
+
+.start_content {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2;
+    margin: 25px;
+}
+
+.game img {
+    margin-left: 2rem;
+    padding: 2rem;
+    height: 50px;
+}
+
+
+
+/* ESTILIZAÇÃO DO CORPO DA PÁGINA INICIAL */
 .game {
     display: flex;
     flex-direction: row;
@@ -67,6 +86,40 @@ li {
     margin: 2rem;
     padding: 2rem;
 }
+
+.game div{
+    width: 200px;
+    height: 200px;
+    background-image:url("images/Dou_shou_qi_board.png");
+}
+
+.jogo_onca_img{
+    width: 650px;
+    height: 450px;
+}
+
+.box {
+    background-color: #69a7f931;
+    box-sizing: border-box;
+    border: solid 1px  #69a7f931;
+    padding: 25px;
+    margin: 25px;
+}
+
+.box img:hover{
+    scale: 1.1;
+}
+
+
+/* ESTILIZAÇÃO DA PÁGINA DE JOGOS */
+/* CONTENT GAME*/
+
+.game_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 /* TUTORIAL GAME*/
 .game_tutorial{
@@ -93,6 +146,7 @@ li {
     margin: 5px;
 }
 
+
 /* ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
 
 .apresentacao{
@@ -107,43 +161,30 @@ li {
     margin: 2rem;
     padding: 2rem;
     font-family:fantasy;
-    font-size: x-large;
+    font-size: 1rem;
 }
 .description{
     display: flex;
+    justify-content: center;
 }
 .game_description{
     flex-direction:column;
     justify-content:center ;
     align-items: flex-end;
     box-sizing: border-box;
-    max-width: 500px;
-    padding: 5px;
-    margin: 5px; 
+    max-width: 1000px;
+    padding: 10px;
+    margin: 10px; 
 }
 .game_description p{
     margin-top: 5px;
     text-align: justify;
+    line-height: 2.0;
 }
 
 /* FIM DA ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
 
-.box {
-    background-color: #69a7f931;
-    box-sizing: border-box;
-    border: solid 1px  #69a7f931;
-    padding: 2rem;
-    margin: 2rem;
-}
-#green:hover{
-    scale: 1.1;
-}
-#red:hover{
-    scale: 1.1;
-}
-#yellow:hover{
-    scale:1.1;
-}
+
 
 /* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
 footer {
@@ -155,5 +196,5 @@ footer {
 
 .footer_bar {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
