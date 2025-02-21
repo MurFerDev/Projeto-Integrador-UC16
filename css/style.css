@@ -16,7 +16,6 @@ header {
     height: 8vh;
 }
 
-
 .mundinho2 {
     height: 8vh;
 }
@@ -66,11 +65,10 @@ li {
 }
 
 .game img {
-    margin-left: 2rem;
+    justify-content:space-around;
     padding: 2rem;
-    height: 50px;
+    height: 200px;
 }
-
 
 
 /* ESTILIZAÇÃO DO CORPO DA PÁGINA INICIAL */
@@ -88,9 +86,8 @@ li {
 }
 
 .game div{
-    width: 200px;
-    height: 200px;
-    background-image:url("images/Dou_shou_qi_board.png");
+    width: auto;
+    height: auto;
 }
 
 .jogo_onca_img{
@@ -98,20 +95,14 @@ li {
     height: 450px;
 }
 
-.box {
-    background-color: #69a7f931;
-    box-sizing: border-box;
-    border: solid 1px  #69a7f931;
-    padding: 25px;
-    margin: 25px;
-}
 
-.box img:hover{
+
+.box:hover{
     scale: 1.1;
 }
 
-
 /* ESTILIZAÇÃO DA PÁGINA DE JOGOS */
+ 
 /* CONTENT GAME*/
 
 .game_content{
@@ -163,10 +154,12 @@ li {
     font-family:fantasy;
     font-size: 1rem;
 }
+
 .description{
     display: flex;
     justify-content: center;
 }
+
 .game_description{
     flex-direction:column;
     justify-content:center ;
@@ -176,10 +169,12 @@ li {
     padding: 10px;
     margin: 10px; 
 }
+
 .game_description p{
     margin-top: 5px;
     text-align: justify;
     line-height: 2.0;
+    
 }
 
 /* FIM DA ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
