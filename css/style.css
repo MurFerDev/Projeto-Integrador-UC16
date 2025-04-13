@@ -1,195 +1,109 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
-}
-
-/* ESTILIZAÇÃO DO TOPO DA PÁGINA */
-header {
+    box-sizing: border-box;
+  }
+  
+  /* Cores inspiradas em papel, madeira e tons naturais */
+  body {
+    font-family:'Segoe UI', sans-serif;
+    background-color: #ffe6c0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #5e3c1b;
+    color: #fff;
+    padding: 1rem 2rem;
     display: flex;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(105, 179, 90);
-    
-}
-
-.top_bar {
-    height: 8vh;
-}
-
-.mundinho2 {
-    height: 8vh;
-}
-
-.mundinho2:hover {
-    scale: 1.2;
-}
-
-nav {
-    display: inline-block;
-}
-
-ul {
-    display: block;
-    margin-left: 150px;
-}
-
-li {
-    display: inline-flex;
-    margin-left: 1rem;
-}
-
-#home:hover {
-    scale: 1.2;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-#games:hover {
-    scale: 1.4;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-#about:hover {
-    scale: 1.2;
-    text-shadow:hsl(152, 89%, 17%) 1px 1px 25px;
-}
-
-.menu_bar {
-    font-family: Impact, Haettenschweiler, 'Fantasy', sans-serif;
-    color: #0b5005;
-    font-size:x-large;
-}
-
-.start_content {
-    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    font-family: Georgia, serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #f1e4c6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 2rem;
     text-align: center;
-    line-height: 2;
-    margin: 25px;
-}
-
-.game img {
-    justify-content:space-around;
-    padding: 2rem;
-    height: 200px;
-}
-
-
-/* ESTILIZAÇÃO DO CORPO DA PÁGINA INICIAL */
-.game {
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  #slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem;
+    scrollbar-width: none;
+  }
+  
+  #slider {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    border: solid 5px #536fca;
-    border-radius: 1%;
-    margin: 2rem;
-    padding: 2rem;
-}
-
-.game div{
-    width: auto;
-    height: auto;
-}
-
-.jogo_onca_img{
-    width: 650px;
-    height: 450px;
-}
-
-
-
-.box:hover{
-    scale: 1.1;
-}
-
-/* ESTILIZAÇÃO DA PÁGINA DE JOGOS */
- 
-/* CONTENT GAME*/
-
-.game_content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-/* TUTORIAL GAME*/
-.game_tutorial{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 500px;
-}
-
-.tutorial_list{
-    margin: 10px;
-}
-
-.tutorial_list ul{    
-    margin-left: 15px;
-}
-
-.tutorial_list li{
-    display: inline-block;
-    max-width: 500px;
-    list-style-type:none;
-    list-style-position: inside;
-    align-items: left;
-    margin: 5px;
-}
-
-
-/* ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
-
-.apresentacao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    border:none;
-    border-radius: 1%;
-    margin: 2rem;
-    padding: 2rem;
-    font-family:fantasy;
-    font-size: 1rem;
-}
-
-.description{
-    display: flex;
-    justify-content: center;
-}
-
-.game_description{
-    flex-direction:column;
-    justify-content:center ;
-    align-items: flex-end;
-    box-sizing: border-box;
-    max-width: 1000px;
-    padding: 10px;
-    margin: 10px; 
-}
-
-.game_description p{
-    margin-top: 5px;
-    text-align: justify;
-    line-height: 2.0;
-    
-}
-
-/* FIM DA ESTILIZAÇÃO DAS PÁGINAS DOS JOGOS*/
-
-
-
-/* ESTILIZAÇÃO DO RODAPÉ DA PÁGINA */
-footer {
-    background-color: #6ec7f0;
+    gap: 1rem;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .region-card {
+    background-color: #fff8e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 180px;
+    flex-shrink: 0;
     text-align: center;
     padding: 1rem;
-    margin: 1rem;
-}
-
-.footer_bar {
-    display: flex;
-    justify-content: center;
-}
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .region-card:hover {
+    transform: scale(1.05);
+    background-color: #fff1d2;
+  }
+  
+  .region-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: #5e3c1b;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    header, nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .region-card {
+      width: 150px;
+    }
+  }
